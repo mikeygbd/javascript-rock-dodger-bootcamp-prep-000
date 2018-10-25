@@ -169,8 +169,8 @@ function moveDodgerLeft() {
        DODGER.style.left = `${left += 4}px`
      }
    })
-   dodger.style.top = `${top += 4}px`;
-   
+  
+
 }
 
 function moveDodgerRight() {
