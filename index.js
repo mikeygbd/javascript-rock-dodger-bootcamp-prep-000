@@ -86,7 +86,7 @@ GAME.appendChild(rock);
      * we should call endGame()
      */
 
-     rock.style.left = `${top += 2}px`;
+     rock.style.top = `${top += 2}px`;
      if (checkCollision(rock)){
      return endGame();
    }
