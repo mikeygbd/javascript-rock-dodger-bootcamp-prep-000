@@ -169,7 +169,7 @@ function moveDodgerLeft() {
        DODGER.style.left = `${left - 4}px`
      }
    })
-  
+
 
 }
 
