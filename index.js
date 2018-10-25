@@ -97,8 +97,9 @@ function createRock(x) {
    }
    }
    window.requestAnimationFrame(moveRock)
-   ROCKS.push(rock)
+
 }
+ROCKS.push(rock)
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
