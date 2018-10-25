@@ -90,6 +90,11 @@ GAME.appendChild(rock);
      if (checkCollision(rock)){
      return endGame();
    }
+   if(top < GAME_HEIGHT) {
+     window.requestAnimationFrame(moveRock)
+   } else {
+     rock.remove()
+   }
    }
 }
 
@@ -122,6 +127,10 @@ GAME.appendChild(rock);
 function endGame() {
   ROCKS.forEach(function(rock) {rock.remove()})
   clearInterval(gameInterval);
+  document.removeEventListener('keydown', moveDodger)
+ START.innerHTML = 'Play again?'
+START.style.display = 'inline'
+ return alert('YOU LOSE!')
 }
 
 function moveDodger(e) {
