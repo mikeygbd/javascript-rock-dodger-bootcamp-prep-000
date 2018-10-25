@@ -63,7 +63,7 @@ function createRock(x) {
   const rock = document.createElement('div')
 
   rock.className = 'rock';
-  rock.style.left = `${x}px`;
+  rock.style.left = `${2}px`;
 
   // Hmmm, why would we have used `var` here?
   var top = 0
@@ -107,7 +107,7 @@ GAME.appendChild(rock);
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-  
+
 
   // We should kick of the animation of the rock around here
 
