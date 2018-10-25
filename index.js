@@ -145,14 +145,14 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   const eCall = e.which
-   if ([LEFT_ARROW, RIGHT_ARROW].indexOf(eCall) > -1){
+   const which = e.which
+   if ([LEFT_ARROW, RIGHT_ARROW].indexOf(which) > -1){
      e.preventDefault()
      e.stopPropagation()
    }
-   if (e.which === LEFT_ARROW) {
+   if (which === LEFT_ARROW) {
      moveDodgerLeft()
-   } else if (e.which === RIGHT_ARROW) {
+   } else if (which === RIGHT_ARROW) {
      moveDodgerRight()
    }
 }
