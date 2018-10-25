@@ -86,7 +86,7 @@ GAME.appendChild(rock);
      * we should call endGame()
      */
 
-     rock.style.top = `${top += 2}px`;
+     
      if (checkCollision(rock)){
      return endGame();
    }
@@ -131,7 +131,8 @@ function endGame() {
   ROCKS.forEach(function(rock) {rock.remove() })
 
   document.removeEventListener('keydown', moveDodger)
-
+  START.innerHTML = 'Play again?'
+ START.style.display = 'inline'
  return alert('Game Over!')
 }
 
@@ -144,6 +145,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+
 }
 
 function moveDodgerLeft() {
