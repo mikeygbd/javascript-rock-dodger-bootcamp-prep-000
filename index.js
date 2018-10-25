@@ -63,7 +63,7 @@ function createRock(x) {
   const rock = document.createElement('div')
 
   rock.className = 'rock';
-  rock.style.left = `${2}px`;
+  rock.style.left = `${x}px`;
 
   // Hmmm, why would we have used `var` here?
   var top = 0
@@ -86,7 +86,7 @@ GAME.appendChild(rock);
      * we should call endGame()
      */
 
-     rock.style.top = `${top += 2}px`;
+     rock.style.left = `${top += 2}px`;
      if (checkCollision(rock)){
      return endGame();
    }
