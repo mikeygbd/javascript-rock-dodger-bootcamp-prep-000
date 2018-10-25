@@ -96,6 +96,7 @@ GAME.appendChild(rock);
      rock.remove()
    }
    }
+   window.requestAnimationFrame(moveRock)
 }
 
     /**
