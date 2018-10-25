@@ -132,7 +132,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   clearInterval(gameInterval)
 
-  ROCKS.forEach(function(rock) { rock.remove(rock) })
+  ROCKS.forEach(function(rock)  { `rock.remove()` })
 
   document.removeEventListener('keydown', moveDodger)
   START.innerHTML = 'Play again?'
